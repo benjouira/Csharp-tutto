@@ -10,6 +10,7 @@ namespace helloWorld
         public void showName()
         {
             Console.WriteLine(this.name);
+            Console.WriteLine("change from Github");
         }
     }
     class Program
