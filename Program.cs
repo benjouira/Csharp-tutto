@@ -5,29 +5,29 @@ namespace helloWorld
 
     class Person
     {
-        private string name;
+        public string name;
 
+        public static Person CreatePersonInstence(string name)
+        {
+            var person = new Person();
+            person.name = name;
+            return person;
+        }
         public void showName()
         {
             Console.WriteLine(this.name);
-            Console.WriteLine("change from Github");
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            try
-            {
-                string i = "1000";
-                byte b = Convert.ToByte(i);
-                Console.WriteLine(b);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine(":/");
-            }
-            
+            var p1 = new Person();
+            p1.name = "name 1";
+            p1.showName();
+
+            var p2 = Person.CreatePersonInstence("3ebsi");
+            p2.showName();
         }
     }
 }
