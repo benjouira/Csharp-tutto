@@ -2,6 +2,16 @@
 
 namespace helloWorld
 {
+
+    class Person
+    {
+        private string name;
+
+        public void showName()
+        {
+            Console.WriteLine(this.name);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
